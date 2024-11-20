@@ -35,149 +35,98 @@ html{
 
 
 
-/* Start signup page style */
-.signup{
-    width: 380px;
-    height: 430px;
-    padding: 20px;
-    margin: 50px auto 0 ;
-    border: 1px solid var(--main-color);
-    border-radius: 10px;
-    font-weight: bold;
-    transition: var(--main-transation);
+/* Start SignUp And Login pages style */
+section .container .login h1{
+    margin-bottom: 30px;
 }
-.signup:hover{
+section .container .signUp
+,section .container .login{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .signBox{
+    width: 95%;
+}
+section .container .signUp form
+,section .container .login form{
+    width: 400px;
+    height: 98%;
+    padding: 17px;
+    background-color: rgba(255, 255, 255, 0.867);
+    border-radius: 10px;
     box-shadow: var(--main-box-shadow);
-    width: 370px;
 }
-.signup form{
-    text-align: center;
-    color: var(--main-color);
-    
-}
-.signup form input{
-    width: 200px;height: 30px;
-    margin: 10px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 10px;
-    color: var(--main-color);
-    text-align: center;
+section .container .signUp form label,section .container .signUp form input
+,section .container .login form label,section .container .login form input{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin: 3px;
+    border: none;
     transition: all 0.5s;
     cursor: pointer;
-    
+    display: inline-block;
 }
-.signup form input:hover{
-    width:220px;
-    box-shadow: var(--main-box-shadow);
-}
-.signup form .signupbtn button{
-    width: 120px;
-    height: 30px;
-    color: white;
+section .container .signUp form input
+,section .container .login form input{
+    border-bottom: 1px solid #aaa;
     background-color: transparent;
-    border: 1px solid var(--main-color);
+}
+section .container .login form input{
+    margin-bottom: 30px;
+}
+section .container .signUp form input:hover
+,section .container .login form input:hover{
+    cursor: text;
+}
+section .container .signUp form a .signBtn,section .container .signUp form a .loginBtn
+,section .container .login form a .signBtn,section .container .login form a .loginBtn{
+    width: 160px;
+    height: 40px;
+    border: none;
     border-radius:10px ;
     margin: 10px;
-    font-weight: bold;
     transition: var(--main-transation);
-}
-.signup form .signupbtn button:hover{
-    width: 130px;
-    box-shadow: var(--main-box-shadow);
-    font-size: 14.5px;
-    background-color: rgba(255, 255, 255, 0.449);
-    border: 1px solid white;
-}
-.signup form p .logintx{
-    color: var(--main-color);
-    text-decoration: none;
-    margin: 7px 0;
-    padding-left: 5px;
-    display: inline-block;
-    transition: all 0.5s;
-    border-bottom: 1px solid var(--main-color);
-}
-.signup form p .logintx:hover{
     cursor: pointer;
-}
- /* End signup page style */
-
-
-
-
-
-
-
-/* Start login page style */
-.login{
-width: 320px;
-height: 190px;
-padding: 20px;
-margin: 130px auto 0 ;
-border: 1px solid var(--main-color);
-border-radius: 10px;
-font-weight: bold;
-transition: var(--main-transation);
-}
-.login:hover{
-box-shadow: var(--main-box-shadow);
-width: 310px;
-}
-.login form{
-    text-align: center;
-    color: var(--main-color);
-}
-.login form input{
-    width: 200px;height: 30px;
-    margin: 10px;
+    font-size: 17px;
     background-color: transparent;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
+}
+section .container .signUp form a .signBtn
+,section .container .login form a .signBtn{
+    background-color: var(--main-color-text);
     color: var(--main-color);
-    transition: all 0.5s;
-    cursor: pointer;
 }
-.login form input:hover{
-    width:220px;
-    box-shadow: var(--main-box-shadow);
+section .container .signUp form a .signBtn:hover
+,section .container .login form a .signBtn:hover{
+    background-color: var(--main-color);
+    color: var(--main-color-text);
+    box-shadow: 0 0 12px var(--main-color-text);
 }
-.login form .loginbtn button{
-    width: 120px;
-    height: 30px;
-    color: white;
-    background-color: transparent;
-    border: 1px solid var(--main-color);
-    border-radius:10px ;
-    margin: 10px;
-    font-weight: bold;
-    transition: var(--main-transation);
+section .container .signUp form a .loginBtn
+,section .container .login form a .loginBtn{
+    word-spacing: 12px;
 }
-.login form .loginbtn button:hover{
-    width: 130px;
-    box-shadow: var(--main-box-shadow);
-    font-size: 14.5px;
-    background-color: rgba(255, 255, 255, 0.449);
-    border: 1px solid white;
+section .container .signUp form a .loginBtn:hover
+,section .container .login form a .loginBtn:hover{
+    padding-left: 20px;
 }
-.login form p .signuptx{
-    color: var(--main-color);
-    text-decoration: none;
-    margin: 7px 0;
-    padding-left: 5px;
-    display: inline-block;
-    transition: all 0.5s;
-    border-bottom: 1px solid var(--main-color);
-}
-.login form p .signuptx:hover{
-    cursor: pointer;
-}
-/* End login page style */
+ /* End SignUp And Login pages style */
+
+
+
 
 
 
 /* Start Home page style */
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1003;
+    background-color: white;
+}
 .header .container .nav{   
     height: 80px;
 }
@@ -190,7 +139,6 @@ width: 310px;
 }
 .header .container .nav ul{
     float: right;
-    
 }
 .header .container .nav ul li{
     display: inline-block;
@@ -242,6 +190,7 @@ section .container{
     top:0;
     left: 50%;
     transform: translate(-50%);
+    height: 100%;
 }
 section .container .intro{
     display: flex;
@@ -258,7 +207,6 @@ section .container .intro p{
 section .container .intro  a button{
     width: 180px;
     height: 40px;
-    background-color: white;
     border: none;
     border-radius: 10px;
     background-color: var(--main-color-text);
@@ -519,19 +467,59 @@ section .container .intro  a button:hover{
 
 .contactUs{
     margin-top: 50px;
-    background-color: #131419;
+    background-color: #faf9f9;
+    
     color: var(--main-color);
 }
 .contactUs .container .parent{
     width: 100%;
-    height: 300px;
-    background-color: #304632;
+    height: 250px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
-
-
+.contactUs .container .parent ul{
+    text-align: center;
+}
+.contactUs .container .parent ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+.contactUs .container .parent ul li a{
+    color: #524c4f;
+    transition: all .5s;
+}
+.contactUs .container .parent ul li a:hover{
+    color: var(--main-color-text);
+}
+.contactUs .container .parent .icons{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+.contactUs .container .parent .icons a{
+    display: inline-block;
+    margin: 10px;
+    padding: 2px;
+    color: var(--main-color-text);
+    transition: all 0.5s;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 31px;
+}
+.contactUs .container .parent .icons a:hover{
+    background-color: var(--main-color-text) ;
+    color: white;
+}
+.contactUs .container .parent p{
+    color: #aaa;
+    padding: 10px;
+    font-size: 14px;
+}
 /* End Home page style */
 
 
@@ -588,6 +576,10 @@ section .container .intro  a button:hover{
     .gallery .container .parent .child2 .r1{
         line-height: 23px;
     }
+    section .signBox{
+        width: 400px;
+        transform: translate(-53.5%);
+    }
 }
 
 /* Small */
@@ -614,6 +606,9 @@ section .container .intro  a button:hover{
     .gallery .container .parent .child1,.gallery .container .parent .child2{
         width: 50%;
         height: 100%;
+    }
+    .contactUs .container .parent ul li{
+        padding: 30px;
     }
 }
 
