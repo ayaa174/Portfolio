@@ -55,7 +55,7 @@ section .container .signUp form
     width: 400px;
     height: 98%;
     padding: 17px;
-    background-color: rgba(255, 255, 255, 0.867);
+    background-color: var(--main-color);
     border-radius: 10px;
     box-shadow: var(--main-box-shadow);
 }
@@ -93,6 +93,7 @@ section .container .signUp form a .signBtn,section .container .signUp form a .lo
     cursor: pointer;
     font-size: 17px;
     background-color: transparent;
+    color: black;
 }
 section .container .signUp form a .signBtn
 ,section .container .login form a .signBtn{
