@@ -75,6 +75,19 @@ section .container .signUp form input
     border-bottom: 1px solid #aaa;
     background-color: transparent;
 }
+section .container .signUp form input[type="checkbox"]{
+    accent-color: var(--main-color-text);
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+#rememberLabel{
+    width: 80%;
+    color: #aaa;
+    font-size: 14px;
+    padding-left: 0;
+}
 section .container .login form input{
     margin-bottom: 30px;
 }
